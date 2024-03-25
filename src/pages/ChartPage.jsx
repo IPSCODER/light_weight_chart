@@ -6,6 +6,7 @@ import {ddperiod} from "../data/ddperiod"
 import {retun} from "../data/return"
 import { ChromePicker } from 'react-color';
 import { ContextProvider } from '../App'
+import logoImg from "../logo_matigos.png"
 
 const ChartPage = (props) => {
 const {color,setColor} = useContext(ContextProvider)
@@ -31,7 +32,9 @@ useEffect(()=>{
   return (
     <>
     <div className='header' >
-      <span style={{backgroundColor:color}} className='logo' >Logo</span>
+      <span style={{backgroundColor:color}} className='logo' >
+        <img src={logoImg} alt='logo' />
+      </span>
       <div ref={domNode} className='color-picker' style={{backgroundColor:color}}  >
         <span onClick={()=>{setColorPicker(prev => !prev)}} >{colorPicker ? "CLOSE" : "COLOR" }</span>
       {colorPicker && <ChromePicker color={color} onChange={(e) => {setColor(e.hex)}} />}
