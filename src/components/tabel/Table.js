@@ -18,7 +18,7 @@ const Table = ({data}) => {
         <tbody >
         {data.map((i,index)=>(
           <tr key={index} >
-          <td>{i.Max_Drawdown_Date}<span>  -  </span>{i.End_Date}</td>
+          <td>{i.Start_Date}<span>  -  </span>{i.End_Date}</td>
           <td>{i.Max_Drawdown.toFixed(2)}</td>
           <td>{i.Time_for_recovery}</td>  
         </tr>
