@@ -67,6 +67,17 @@ export const ddperiod = {
             "Max_Drawdown_Date": "2024-02-14",
             "Time_for_max_drawdown": 0,
             "Time_for_recovery": 2
+        },
+        {
+            "Start_Date": "2024-01-19",
+            "End_Date": "2024-01-23",
+            "Drawdown_days": 2,
+            "Trading_days": 2,
+            "Total_Trades": 7,
+            "Max_Drawdown": -0.05000000000291038,
+            "Max_Drawdown_Date": "2024-02-14",
+            "Time_for_max_drawdown": 0,
+            "Time_for_recovery": 2
         }
     ],
     "message": "Data received"
